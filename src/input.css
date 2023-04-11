@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .hover-scale{@apply transition duration-300 ease-in}
+
+    .hover-scale:hover{@apply scale-125}
+
+    nav>a{@apply text-white}
+
+    nav>a:active{@apply text-orange-500}
+
+    
+
+    
+
+
+
+}
