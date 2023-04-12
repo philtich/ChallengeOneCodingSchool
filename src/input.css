@@ -12,15 +12,30 @@
 
     .role{@apply opacity-0 scale-50 transition duration-1000 ease-in}
 
+    .roles{@apply opacity-0 scale-50 transition duration-1000 ease-in}
+
+    .roles-div {@apply opacity-0 transition duration-1000 ease-in}
+
+    .roles-div-side{@apply opacity-0 transition duration-1000 ease-in}
+
+    .roles-div-side-one{@apply opacity-0 transition duration-1000 ease-in}
+
+    .roles-div-side-two{@apply opacity-0 transition duration-1000 ease-in}
+
     .active {@apply opacity-100 scale-110}
 
+    .active-div {@apply opacity-100 translate-x-8}
 
-      }
+    .active-div-side {@apply opacity-100 -translate-x-8}
+
+    .active-div-side-one {@apply opacity-100 translate-x-8}
+
+    .active-div-side-two {@apply opacity-100 -translate-x-8}
+
+    
+    
 
 
     
 
-    
-
-
-
+}

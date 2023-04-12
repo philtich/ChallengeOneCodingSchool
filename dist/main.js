@@ -80,3 +80,76 @@ window.addEventListener('scroll',()=>
 		}
 	 }
 )
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active')
+	 }else {
+			content.classList.remove('active');
+		}
+	 }
+)
+
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div')
+	 }else {
+			content.classList.remove('active-div');
+		}
+	 }
+)
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div-side');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div-side')
+	 }else {
+			content.classList.remove('active-div-side');
+		}
+	 }
+)
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div-side-one');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div-side-one')
+	 }else {
+			content.classList.remove('active-div-side-one');
+		}
+	 }
+)
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div-side-two');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div-side-two')
+	 }else {
+			content.classList.remove('active-div-side-two');
+		}
+	 }
+)
+
+
+
+
+
+
+

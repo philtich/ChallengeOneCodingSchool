@@ -2,6 +2,17 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
+
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '16': '16px',
+    },
+
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/assets/bild1.jpg')",
@@ -27,6 +38,13 @@ module.exports = {
     animation: {
     'waving-hand': 'wave 2s linear infinite',
     },
+
+    transitionProperty: {
+      'height': 'height',
+      'spacing': 'margin, padding',
+      'background': 'background'
+    },
+
   plugins: [],
 }
 
