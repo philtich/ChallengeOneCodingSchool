@@ -9,7 +9,9 @@ module.exports = {
     },
     height: {
       '100vh': '100vh',
+      '300' : '300px'
     },
+
     keyframes: {
       wave: {
         '0%': { transform: 'rotate(0.0deg)' },

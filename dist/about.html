@@ -15,7 +15,7 @@
                     <h1 class="text-black text-bold text-xl italic p-4">PT</h1>
                   </div>
                 </a>
-                <div class="flex items-center justify-end border-l lg:border-l-0">
+                <div class="flex items-center justify-end border-l border-black lg:border-l-0">
                   <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
                   <label for="hamburger" class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
                     <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-black transition duration-300"></div>
@@ -25,19 +25,19 @@
     
                   <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                     <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
-                      <ul class="px-6 pt-32 text-black space-y-8 md:space-y-0 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                      <ul class="px-6 pt-32  text-white md:bg-transparent md:text-black font-extrabold md:font-normal space-y-8 md:space-y-0 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                         <li>
-                          <a href="index.html" class="group relative before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:bg-slate-700">
+                          <a href="index.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                             <span class="relative">Home</span>
                           </a>
                         </li>
                         <li>
-                          <a href="about.html" class="group relative before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                          <a href="about.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                             <span class="relative">About Me</span>
                           </a>
                         </li>
                         <li>
-                            <a href="#" class="group relative before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                            <a href="#" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                               <span class="relative">Projects</span>
                             </a>
                           </li>
@@ -51,23 +51,26 @@
       </header>
     <section class="w3-animate-opacity w-full h-100vh flex justify-center items-center bg-hero-about bg-center bg-no-repeat bg-cover relative">
 		<div class="w-10/12 h-full flex justify-center flex-col items-end gap-28 md:gap-14">
-            <h1 class="text-black text-5xl font-extrabold w-1/2 animate-waving-hand italic uppercase">"Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr,<br> sed diam"</h1>
+            <p class="text-black text-2xl md:text-5xl font-extrabold w-1/2 animate-waving-hand italic uppercase">"Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr,<br> sed diam"</p>
         </div>
 	</section>
     <section class="bg-white flex justify-center items-center">
-        <div class="flex mt-14 w-10/12 flex-col md:flex-row gap-6 md:gap-12">
-            <div class="flex justify-center items-center w-full md:w-1/2">
-                <img class="rounded-lg w3-animate-left h-1/3 md:h-2/3" src="/assets/bild2.jpg" alt="Philipp Tichy Portrait">
-            </div>
-            <div class="text-black w-full md:w-1/2 flex flex-col justify-center gap-5 items-start w3-animate-right">
+        <div class="flex mt-12 w-10/12 flex-col ">
+            <div class="role text-black w-full flex flex-col justify-center gap-6 md:gap-8 items-start">
                 <h1 class="text-left text-5xl font-bold">About Me</h1>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor 
                     sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <div class="flex w-10/12 justify-center items-center">
+                    <img class="rounded-lg h-300 hover-scale"src="/assets/bild2.jpg" alt="Philipp Tichy Portrait">
+                </div>
+            </div>     
         </div>
     </section>
+   
+
 <script src="/dist/main.js"></script>
 </body>
 </html>
