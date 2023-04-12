@@ -27,20 +27,26 @@
                     <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
                       <ul class="px-6 pt-32  text-white md:bg-transparent md:text-black font-extrabold md:font-normal space-y-8 md:space-y-0 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                         <li>
-                          <a href="index.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                          <a href="index.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 md:before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                             <span class="relative">Home</span>
                           </a>
                         </li>
                         <li>
-                          <a href="about.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                          <a href="about.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 md:before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                             <span class="relative">About Me</span>
                           </a>
                         </li>
                         <li>
-                            <a href="#" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                            <a href="#" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 md:before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                               <span class="relative">Projects</span>
                             </a>
-                          </li>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="group relative bg-black md:bg-transparent p-4 md:p-0 before:absolute before:inset-x-0 before:-bottom-2 before:h-1 before:origin-right before:scale-x-0 md:before:bg-slate-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                              <span class="relative">Contact</span>
+                            </a>
+                        </li>
+
                       </ul>
                     </div>
                   </div>
@@ -82,14 +88,16 @@
                 </div>
                 <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
                   <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+                  <img src="/assets/bild4.jpg" alt="Philipp" class="w-36 h-36 rounded-full">
                   <p class="text-sm leading-snug tracking-wide text-gray-900">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
+
               </div>
           
               <!-- left timeline -->
               <div class="mb-8 flex justify-normal gap-8 md:justify-between flex-col md:flex-row-reverse items-center w-full left-timeline roles-div">
                 <div class="order-1"></div>
-                <div class="z-20 flex items-center order-1 bg-gray-200 shadow-xl rounded-full">
+                <div class="z-10 flex items-center order-1 bg-gray-200 shadow-xl rounded-full">
                   <p class="mx-auto font-semibold text-lg text-black p-2">2012</p>
                 </div>
                 <div class="order-1 bg-black rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
@@ -123,7 +131,23 @@
               </div>
             </div>
           </div>
-    </section>
+    </section> 
+    <footer class="flex justify-center p-8 bg-black">
+        <div class="w-10/12 flex justify-between items-center flex-col md:flex-row gap-6">
+            <nav class="flex gap-4 text-white">
+                <a class="hover-scale" href="">Datenschutz</a>
+                <a class="hover-scale" href="">Impressum</a>
+            </nav>
+        
+        <div class="flex justify-center flex-row items-center gap-4">
+            <a href="https://www.facebook.com" target="_blank"><img class="hover-scale w-16 h-16" src="/assets/socials/facebook-icon.svg" alt="Facebook"></a>
+            <a href="https://www.github.com" target="_blank"><img class="hover-scale w-16 h-16" src="/assets/socials/github-mark-white.svg" alt="Github"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="hover-scale w-16 h-16" src="/assets/socials/instagram-icon.svg" alt="Instagram"></a>
+        </div>
+        <p class="text-center  text-white"> © Philipp Tichy </p>
+    </div>
+    </footer>
+    
     
 
 <script src="/dist/main.js"></script>
