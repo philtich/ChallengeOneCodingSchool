@@ -154,61 +154,71 @@ const projects = [
 	title: "hallo",
 	descr: "hallo",
 	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-		title: "serwas",
-		descr: "serwas",
-		date: "March 2023",
-		image: "/assets/bild2.jpg"
-		},
-	{
-	title: "ciao",
-	descr: "ciao",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-	title: "bo",
-	descr: "bo",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-	title: "bu",
-	descr: "bi",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-	title: "bu",
-	descr: "bi",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-	title: "bu",
-	descr: "bi",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
-	},
-	{
-	title: "hallo",
-	descr: "hallo",
-	date: "March 2023",
-	image: "/assets/bild2.jpg"
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild4.jpg"
 	},
 	{
 	title: "serwas",
 	descr: "serwas",
 	date: "March 2023",
-	image: "/assets/bild2.jpg"
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
 	},
 	{
 	title: "ciao",
 	descr: "ciao",
 	date: "March 2023",
-	image: "/assets/bild2.jpg"
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "bo",
+	descr: "bo",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "hallo",
+	descr: "hallo",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "serwas",
+	descr: "serwas",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
+	},
+	{
+	title: "ciao",
+	descr: "ciao",
+	date: "March 2023",
+	image: "/assets/bild2.jpg",
+	imageTwo: "/assets/bild3.jpg"
 	},
 	
 ]
@@ -234,9 +244,19 @@ projects.forEach((project, index)=>{
 	let itemDateText = document.createTextNode(`${project.date}`)
 	itemDate.appendChild(itemDateText)
 	card.appendChild(itemDate)
+	let figure = document.createElement('figure')
+	card.appendChild(figure)
+	let imageDiv = document.createElement('div')
+	imageDiv.classList.add('img-area')
+	figure.appendChild(imageDiv)
 	let itemImage = document.createElement('img');
 	itemImage.setAttribute('src', `${project.image}`)
-	card.appendChild(itemImage)
+	itemImage.classList.add('img-back')
+	imageDiv.appendChild(itemImage)
+	let itemImageTwo = document.createElement('img');
+	itemImageTwo.setAttribute('src', `${project.imageTwo}`)
+	itemImageTwo.classList.add('img-front')
+	imageDiv.appendChild(itemImageTwo)
 
 	
 })
