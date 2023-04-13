@@ -147,12 +147,38 @@ window.addEventListener('scroll',()=>
 	 }
 )
 
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div-side-three');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div-side-three')
+	 }else {
+			content.classList.remove('active-div-side-three');
+		}
+	 }
+)
+
+window.addEventListener('scroll',()=> 
+{
+	let content = document.querySelector('.roles-div-side-four');
+	let contentPosition = content.getBoundingClientRect().top;
+	let screenPosition = window.innerHeight;
+	 if (contentPosition < screenPosition){
+		content.classList.add('active-div-side-four')
+	 }else {
+			content.classList.remove('active-div-side-four');
+		}
+	 }
+)
+
 
 const projects = [
 
 	{
-	title: "hallo",
-	descr: "hallo",
+	title: "Project 1",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild4.jpg",
@@ -160,7 +186,7 @@ const projects = [
 	},
 	{
 	title: "serwas",
-	descr: "serwas",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -168,7 +194,7 @@ const projects = [
 	},
 	{
 	title: "ciao",
-	descr: "ciao",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -176,7 +202,7 @@ const projects = [
 	},
 	{
 	title: "bo",
-	descr: "bo",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -184,7 +210,7 @@ const projects = [
 	},
 	{
 	title: "bu",
-	descr: "bi",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -192,7 +218,7 @@ const projects = [
 	},
 	{
 	title: "bu",
-	descr: "bi",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -200,7 +226,7 @@ const projects = [
 	},
 	{
 	title: "bu",
-	descr: "bi",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -208,7 +234,7 @@ const projects = [
 	},
 	{
 	title: "hallo",
-	descr: "hallo",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -216,7 +242,7 @@ const projects = [
 	},
 	{
 	title: "serwas",
-	descr: "serwas",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",
@@ -224,7 +250,7 @@ const projects = [
 	},
 	{
 	title: "ciao",
-	descr: "ciao",
+	descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
 	imageTwo: "/assets/bild3.jpg",

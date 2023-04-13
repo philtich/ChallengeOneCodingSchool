@@ -22,6 +22,10 @@
 
     .roles-div-side-two{@apply opacity-0 transition duration-1000 ease-in}
 
+    .roles-div-side-three{@apply opacity-0 transition duration-1000 ease-in}
+
+    .roles-div-side-four{@apply opacity-0 transition duration-1000 ease-in}
+
     .active {@apply opacity-100 scale-110}
 
     .active-div {@apply opacity-100 translate-x-8}
@@ -32,13 +36,18 @@
 
     .active-div-side-two {@apply opacity-100 -translate-x-8}
 
-    .project-card{@apply bg-red-400}
+    .active-div-side-three {@apply opacity-100 -translate-x-8}
 
-    .img-area {@apply relative w-20 h-20}
+    .active-div-side-four {@apply opacity-100 translate-x-8}
 
-    .img-area img  {@apply absolute left-0 w-20 h-20 transition-opacity duration-1000 ease-in-out overflow-hidden}
+    .project-card{@apply bg-gray-400 p-6 flex flex-col gap-4}
+
+    .img-area {@apply relative w-80 h-80 flex justify-center items-center}
+
+    .img-area img  {@apply absolute left-0 w-80 h-80 transition-opacity duration-1000 ease-in-out overflow-hidden}
 
     .img-front:hover{@apply opacity-0 cursor-pointer}
+
     
 
 

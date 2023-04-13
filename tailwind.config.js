@@ -17,10 +17,13 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('/assets/bild1.jpg')",
         'hero-about': "url('/assets/bild3.jpg')",
-        'hero-contact': "url('/assets/bild5.jpg')"
+        'hero-contact': "url('/assets/bild5.jpg')",
+        'hero-projects': "url('/assets/bild6.jpg')"
     },
     height: {
       '100vh': '100vh',
+      '60vh': '60vh',
+      '80vh': '80vh',
       '300' : '300px'
     },
 
