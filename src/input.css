@@ -32,7 +32,7 @@
 
     .active-div-side-two {@apply opacity-100 -translate-x-8}
 
-    
+    .project-card{@apply bg-red-400}
     
 
 

@@ -633,6 +633,11 @@ nav>a {
   opacity: 1;
 }
 
+.project-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -733,6 +738,10 @@ nav>a {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -840,6 +849,10 @@ nav>a {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1368,15 +1381,15 @@ nav>a {
     height: 100%;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-5\/12 {
     width: 41.666667%;
   }
 
   .md\:w-6\/12 {
-    width: 50%;
-  }
-
-  .md\:w-1\/2 {
     width: 50%;
   }
 

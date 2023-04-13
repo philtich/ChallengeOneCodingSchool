@@ -148,8 +148,96 @@ window.addEventListener('scroll',()=>
 )
 
 
+const projects = [
+
+	{
+	title: "hallo",
+	descr: "hallo",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+		title: "serwas",
+		descr: "serwas",
+		date: "March 2023",
+		image: "/assets/bild2.jpg"
+		},
+	{
+	title: "ciao",
+	descr: "ciao",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "bo",
+	descr: "bo",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "bu",
+	descr: "bi",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "hallo",
+	descr: "hallo",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "serwas",
+	descr: "serwas",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	{
+	title: "ciao",
+	descr: "ciao",
+	date: "March 2023",
+	image: "/assets/bild2.jpg"
+	},
+	
+]
+
+console.log(projects)
+
+const cards = document.getElementById('cards')
 
 
+projects.forEach((project, index)=>{
+	let card = document.createElement('div')
+	card.classList.add('project-card')
+	cards.appendChild(card)
+	let itemHead = document.createElement('h2');
+	let itemHeadText = document.createTextNode(`${project.title}`)
+	itemHead.appendChild(itemHeadText)
+	card.appendChild(itemHead)
+	let itemDescr = document.createElement('p');
+	let itemDescrText = document.createTextNode(`${project.descr}`)
+	itemDescr.appendChild(itemDescrText)
+	card.appendChild(itemDescr)
+	let itemDate = document.createElement('span');
+	let itemDateText = document.createTextNode(`${project.date}`)
+	itemDate.appendChild(itemDateText)
+	card.appendChild(itemDate)
+	let itemImage = document.createElement('img');
+	itemImage.setAttribute('src', `${project.image}`)
+	card.appendChild(itemImage)
 
-
+	
+})
 
