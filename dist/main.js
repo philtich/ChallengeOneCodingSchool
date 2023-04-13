@@ -155,70 +155,80 @@ const projects = [
 	descr: "hallo",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild4.jpg"
+	imageTwo: "/assets/bild4.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "serwas",
 	descr: "serwas",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "ciao",
 	descr: "ciao",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "bo",
 	descr: "bo",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "bu",
 	descr: "bi",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "bu",
 	descr: "bi",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "bu",
 	descr: "bi",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "hallo",
 	descr: "hallo",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "serwas",
 	descr: "serwas",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	{
 	title: "ciao",
 	descr: "ciao",
 	date: "March 2023",
 	image: "/assets/bild2.jpg",
-	imageTwo: "/assets/bild3.jpg"
+	imageTwo: "/assets/bild3.jpg",
+	url: "https://127.0.0.1:5555/dist/projects.html"
 	},
 	
 ]
@@ -257,6 +267,20 @@ projects.forEach((project, index)=>{
 	itemImageTwo.setAttribute('src', `${project.imageTwo}`)
 	itemImageTwo.classList.add('img-front')
 	imageDiv.appendChild(itemImageTwo)
+	let divFb = document.createElement('div')
+	card.appendChild(divFb)
+	divFb.classList.add('fb-share-button')
+	divFb.setAttribute('data-href', `${project.url}`)
+	divFb.setAttribute('data-layout', ``)
+	divFb.setAttribute('data-size', ``)
+	let a = document.createElement('a')
+	divFb.appendChild(a)
+	a.setAttribute('target', `_blank`)
+	a.setAttribute('href', `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse`)
+	a.classList.add('fb-xfbml-parse-ignore')
+	let aText = document.createTextNode(`Share`)
+	a.appendChild(aText)
+
 
 	
 })
